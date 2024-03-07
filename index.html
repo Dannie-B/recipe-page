@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokboken</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ee1780bb17.js" crossorigin="anonymous"></script>
+</head>
+<!--Inlämning examinationsuppgift del B av Daniel Blom-->
+<!--Jag har valt Mormor Margit som min primära persona. Har även försökt få med en del funktioner från de sekundära.-->
+<!--Jag har försökt att bygga upp sidan med flexbox för att sidan ska vara tillgänglig för mobila och desktop användare.-->
+<body>
+    <header>
+        Kokboken
+    </header>
+    <nav id="navbar">
+        <ul class="links">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Hem</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i> Recept</a></li>
+        </ul>
+        <input type="text" name="recipe" placeholder="Sök Recept">
+        <div class="dropdown">
+            <button class="mypage-btn">Mina sidor</button>
+            <div class="dropdown-content">
+                <a href="#">Mina Recept</a>
+                <a href="#">Gillade recept</a>
+                <a href="#">Lägg till recept</a>
+                <a href="#">Logga ut</a>
+              </div>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <h1 class="heading-content">Baconsås med pasta</h1>
+        <article class="content">
+            <div class="headline">
+                <h2>Beskrivning</h2>
+                <div class="icons-top">
+                    <i class="fa-solid fa-magnifying-glass-minus fa-xl"></i>
+                    <i class="fa-solid fa-magnifying-glass-plus fa-xl"></i>
+                    <span class="speaker"><a href="#">Lyssna <i class="fa-solid fa-volume-high"></i></a></span>
+                </div>
+            </div>
+            <p>Denna underbara pastarätten är en egen favorit från barndomen som mina föräldrar introducerade till mig.<br> Nu delar jag med mig av det enkla receptet och hoppas att ni ska tycka om det lika mycket som mig.<br> 
+            <em>Snabbt</em> och <em>enkelt</em> att laga och passar hela familjen.</p>
+            
+            <h2>Ingredienser</h3>
+            <div class="custom-select">
+                <label>Välj antal portioner:</label>
+                <label>
+                    <select>
+                      <option>4</option>
+                      <option>2</option>
+                      <option>6</option>
+                      <option>8</option>
+                      <option>10</option>
+                    </select>
+                  </label>
+            </div>
+            <ul>
+                <li>Bacon 500gr</li>
+                <li>Valfri pasta, jag föredrar spaghetti.</li>
+                <li>Ketchup 1.5dl</li>
+                <li>Mjölk 3dl</li>
+                <li>Grädde 3dl</li>
+                <li>Salt</li>
+                <li>Svarpeppar</li>
+                <li>Paprikakrydda</li>
+            </ul>
+            <h2>Gör så här:</h4>
+            <ol>
+                <li>Börja koka pastan enligt förpackningens anvisning.</li>
+                <li>Stek baconet så att det får en gyllenbrun yta.</li>
+                <li>Häll ner mjölken och grädden.</li>
+                <li>Lägg till ketchupen och låt sedan puttra ca 5 min</li>
+                <li>Krydda och smaka av tills du är nöjd.</li>
+            </ol>
+        </article>
+        <aside class="sidebar">
+            <img src="images/baconsauce.jpg" alt="Picture of the finnished plate">
+            <h2 class="rating-title">Betyg:</h2>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+            <ul class="recipe-facts">
+                <li><i class="fa-solid fa-clock fa-lg"></i> Tillagning: 15-20 min</li>
+                <li><i class="fa-solid fa-ruler fa-lg"></i> Svårighetsgrad: Lätt</li>
+                <li><i class="fa-solid fa-bolt fa-lg"></i> Kalorier: 324/100gr </li>
+                <li><i class="fa-solid fa-pencil fa-lg"></i> Skapare: Daniel Blom</li>
+            </ul>
+        </aside>
+        <footer>
+            <section class="foot-left">
+                <h2 class="head-contacts">Kontakta oss:</h2>
+                <ul class="contacts">
+                    <li>Email: danielblom@kokboken.se</li>
+                    <li>Tel: 070-432 12 12</li>
+                    <li>Adress: Nygatan 12, Gävle</li>
+                </ul>
+            </section>
+            <section class="foot-right">
+                <span>© 2024 kokboken, inc</span>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
